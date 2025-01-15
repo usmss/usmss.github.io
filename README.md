@@ -1,6 +1,6 @@
 # affichage
 for usms students
-* (its not officiel provided by usms owners)
+* (its not an officiel service provided by usms owners!!)
 * (its made to help iphone users who cant access the E-STUDENT.APK app made for android users only)
 * (it may help to access easily the results)
 * (only from browser even using laptop or ur phone)
