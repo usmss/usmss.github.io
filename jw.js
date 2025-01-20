@@ -12,7 +12,7 @@ document.getElementById("codeForm").addEventListener("submit", async function(ev
     window.focus();
 
     try {
-        const response = await fetch('https://2860-105-157-64-115.ngrok-free.app/exec.php', {
+        const response = await fetch('https://058c-105-157-64-115.ngrok-free.app/exec.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({code: codeInput})
