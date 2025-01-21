@@ -12,7 +12,7 @@ document.getElementById("codeForm").addEventListener("submit", async function(ev
     window.focus();
 
     try {
-        const response = await fetch('http://usms.fwh.is/exec.php?ap=${codeInput}', {
+        const response = await fetch('http://usms.fwh.is/exec.php?apogee=${codeInput}', {
             method: 'GET',
         });
         const data = await response.json();
