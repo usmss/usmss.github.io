@@ -35,7 +35,7 @@ document.getElementById("codeForm").addEventListener("submit", async function(ev
                 }
             });
             if (output) {
-                outputElement.innerHTML = output;
+                outputElement.innerHTML = `<p>output</p>`;
             } else {
                 errorMessageElement.innerHTML = 'Error: Invalid code or we updating the results.';
                 outputElement.innerHTML = '';
