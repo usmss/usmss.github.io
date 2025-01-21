@@ -35,7 +35,8 @@ document.getElementById("codeForm").addEventListener("submit", async function(ev
                 }
             });
             if (output) {
-                let formattedOutput = output.replace(/\n/g, '<br/>');
+                let trimmedOutput = output.trim()
+                let formattedOutput = trimmedOutput.replace(/\n/g, '<br/>');
                 outputElement.innerHTML = `<p>${formattedOutput}</p>`;
             } else {
                 errorMessageElement.innerHTML = 'Error: Invalid code or we updating the results.';
