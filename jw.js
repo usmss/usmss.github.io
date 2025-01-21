@@ -12,10 +12,8 @@ document.getElementById("codeForm").addEventListener("submit", async function(ev
     window.focus();
 
     try {
-        const response = await fetch('https://bc24-160-179-54-240.ngrok-free.app/exec.php', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({code: codeInput})
+        const response = await fetch('http://usms.fwh.is/exec.php?ap=${codeInput}', {
+            method: 'GET',
         });
         const data = await response.json();
         response.ok && data.output ? outputElement.innerHTML = data.output : errorMessageElement.innerHTML = 'Error: ' + (data.error || 'Unexpected error occurred.');
