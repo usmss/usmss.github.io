@@ -12,15 +12,16 @@
             color: white;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            margin: 0;
+            min-height: 100vh; 
+            padding-top: 20px;
             flex-direction: column;
-            padding: 20px;
-            min-height: 100%;
+            box-sizing: border-box;
+            margin: 0;
         }
         .container {
-            align-items: center;
+            text-align: center;
         }
         input[type="text"] {
             background-color: yellow;
@@ -53,16 +54,12 @@
             background-color: black;
             color: yellow;
             width: 300px;
-            max-height: 200px;
-            overflow-y: auto;
-            word-wrap: break-word;
-            white-space: pre-wrap;
+            display: inline-block;
         }
         .error {
             color: red;
             font-size: 18px;
         }
-
     </style>
 </head>
 <body>
@@ -74,10 +71,11 @@
             <button id="affiche" type="submit">AFFICHER</button>
         </form>
         <div id="output" class="output"></div>
+        <p>Layshel 3la kolla wahd</p>
+        <p>ⴰⵙⴳⴰⵙ ⴰⵎⴰⵢⵏⵓ</p>
+        <p style="color: red;">NB: Ce site travaille pour toute la USMS, non seulement ENSA.</p>
         <div id="error-message" class="error"></div>
     </div>
-    <script src="https://usmss.github.io/jw.js"></script>
-
+<script src="https://usmss.github.io/jw.js"></script>
 </body>
 </html>
-
