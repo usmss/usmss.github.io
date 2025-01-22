@@ -18,8 +18,6 @@
             margin: 0;
         }
         .container {
-            display: flex;
-            flex-direction: column;
             align-items: center;
         }
         input[type="text"] {
@@ -32,9 +30,6 @@
             border-radius: 5px;
             margin-bottom: 20px;
             text-align: center;
-            position: sticky;
-            top: 20px;
-            z-index: 1;
         }
         button {
             background-color: yellow;
@@ -57,24 +52,12 @@
             color: yellow;
             width: 300px;
             display: inline-block;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            white-space: pre-wrap;
-            overflow-y: auto;
         }
         .error {
             color: red;
             font-size: 18px;
         }
-        @media (max-width: 600px) {
-            input[type="text"] {
-                width: 90%;  /* Make input width responsive on smaller screens */
-            }
 
-            .output {
-                width: 90%;  /* Adjust output width on smaller screens */
-            }
-        }
     </style>
 </head>
 <body>
